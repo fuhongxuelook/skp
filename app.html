@@ -1,0 +1,341 @@
+<html lang="zh-CN">
+  <head>
+    <title>ShibKing Pro</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <link href="pro2.ico" type="image/x-icon" rel="icon" />
+    <link rel="stylesheet" href="css/r.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script>
+      window.ga =
+        window.ga ||
+        function () {
+          (ga.q = ga.q || []).push(arguments);
+        };
+      ga.l = +new Date();
+      ga("create", "UA-105392568-1", "auto");
+      ga("send", "pageview");
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <ul class="app_menu">
+        <div class="logo_container">
+          <img class="app_menu_logo" src="./img/logo.png" />
+        </div>
+        <li data="1">
+          <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" viewBox="0 0 22 22" aria-hidden="true" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14,11c0,1.7-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-1.7,1.3-3,3-3C12.7,8,14,9.3,14,11z M11,2v6V2z M13.1,13.1l4.2,4.2 L13.1,13.1z M20,11c0,5-4,9-9,9s-9-4-9-9c0-5,4-9,9-9S20,6,20,11z" style="fill: none; stroke: rgb(224, 224, 224); stroke-width: 1.4; stroke-miterlimit: 10;"></path></svg><span>Dashboard</span>
+        </li>
+        <li data="2" class="active">
+          <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" viewBox="0 0 22 22" aria-hidden="true" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8,11.9h3.6 M11.6,10.1H8 M12.8,9.2c0-0.7-0.5-1.2-1.2-1.2h-1.2C9.7,8,9.2,8.5,9.2,9.2v3.6 c0,0.7,0.5,1.2,1.2,1.2h1.2c0.7,0,1.2-0.5,1.2-1.2 M11,2c5,0,9,4,9,9c0,2.5-1,5-2.6,6.6h2 M11,20c-5,0-9-4-9-9c0-2.5,1-5,2.6-6.6h-2 M11,17.6c-3.6,0-6.6-3-6.6-6.6s3-6.6,6.6-6.6s6.6,3,6.6,6.6S14.6,17.6,11,17.6z" style="fill: none; stroke: rgb(0, 202, 239); stroke-width: 1.4; stroke-miterlimit: 10;"></path></svg><span>Stake</span>
+        </li>
+        <li data="3">
+          <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" viewBox="0 0 22 22" aria-hidden="true" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.2,2l0,0.6l2.4,3v1.2l-3.8,3.8c-1,1-1.6,2.4-1.6,3.9c0,3,2.5,5.5,5.5,5.5h4.6c3,0,5.5-2.5,5.5-5.5 c0-1.5-0.6-2.9-1.6-3.9l-3.8-3.8V5.6l2.4-3l0-0.6H6.2z M8.6,9.8L11,7.4l2.4,2.4 M6.8,6.2h8.4" style="fill: none; stroke: rgb(224, 224, 224); stroke-width: 1.4; stroke-miterlimit: 10;"></path></svg><span>Portfolio</span>
+        </li>
+        <li data="4">
+          <div>
+            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" viewBox="0 0 22 22" aria-hidden="true" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20,3.2c0,0.7-0.5,1.2-1.2,1.2s-1.2-0.5-1.2-1.2S18.1,2,18.8,2S20,2.5,20,3.2z M20,18.8c0,0.7-0.5,1.2-1.2,1.2 s-1.2-0.5-1.2-1.2s0.5-1.2,1.2-1.2S20,18.1,20,18.8z M4.4,18.8c0,0.7-0.5,1.2-1.2,1.2S2,19.5,2,18.8s0.5-1.2,1.2-1.2 S4.4,18.1,4.4,18.8z M4.4,3.2c0,0.7-0.5,1.2-1.2,1.2S2,3.9,2,3.2S2.5,2,3.2,2S4.4,2.5,4.4,3.2z M15.3,6.8l2.5-2.5 M4.2,17.8l2.5-2.5 M15.3,15.2l2.5,2.5 M4.2,4.2l2.5,2.5 M17.6,11c0,3.6-3,6.6-6.6,6.6s-6.6-3-6.6-6.6s3-6.6,6.6-6.6S17.6,7.4,17.6,11z" style="fill: none; stroke: rgb(224, 224, 224); stroke-width: 1.4; stroke-miterlimit: 10;"></path></svg><span>Studio</span>
+            <svg class="rightIcon rightDown MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-13rb29c" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="ArrowDropDownIcon" active="0"><path d="m7 10 5 5 5-5z"></path></svg>
+          </div>
+          <div class="subMenu">
+            <p>Talent</p>
+            <p>Hiring</p>
+          </div>
+        </li>
+        <li data="5">
+          <img class="active_img" src="img/i5.png" /><img
+            class="hide_img"
+            src="img/i5h.png"
+          /><span>NFT市场</span>
+        </li>
+      </ul> -->
+      <ul class="app_menu">
+        <div class="logo_container">
+          <img class="app_menu_logo1" src="./img/pro2.png" />
+          <img class="app_menu_logo" src="./img/logo.png" />
+        </div>
+        <li data="1" class="active">
+          <img class="active_img" src="img/i1.png" /><img
+            class="hide_img"
+            src="img/i1h.png"
+          /><span>Stake</span>
+        </li>
+        <li data="2">
+          <img class="active_img" src="img/i2.png" /><img
+            class="hide_img"
+            src="img/i2h.png"
+          /><span>兑换USDT</span>
+        </li>
+        <li data="3">
+          <img class="active_img" src="img/i3.png" /><img
+            class="hide_img"
+            src="img/i3h.png"
+          /><span>流动性挖矿</span>
+        </li>
+        <li data="4">
+          <img class="active_img" src="img/i4.png" /><img
+            class="hide_img"
+            src="img/i4h.png"
+          /><span>IDO平台</span>
+        </li>
+        <li data="5">
+          <img class="active_img" src="img/i5.png" /><img
+            class="hide_img"
+            src="img/i5h.png"
+          /><span>NFT市场</span>
+        </li>
+      </ul>
+      <div class="app_right">
+        <div class="right_top">
+          <button class="ripple">Connect Wallet</button>
+        </div>
+        <div class="right_logo_container">
+          <!-- <img class="right_logo" src="./img/pro2.png" />           -->
+          <h2>Stake</h2>
+        </div>
+        <div class="right_box_container">
+          <div class="right_box1">
+            <p class="p1">Colony Staking</p>
+            <p class="p2">Stake your CLY to unlock all Colony features</p>
+            <div class="p3">
+              <div>
+                <p>Unlock in</p>
+                <p class="p3_1">
+                  <span class="p3_1_span">0/</span>
+                  <span> 20 days</span>
+                </p>
+              </div>
+              <div>
+                <p>Min. amount</p>
+                <p class="p3_2">
+                  50 tokens
+                </p>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="box1_button">
+              <button class="button1 active ripple">Stake</button>
+              <button class="button2 ripple">Unstake</button>
+            </div>
+            <div class="box1_money">
+              <div class="l">
+                Amount to
+                <span class="dText">stake</span>
+              </div>
+              <div class="r">
+                <span>CLY Amount:</span>
+                <span class="num">0.0000</span>
+              </div>
+            </div>
+            <div class="submit_input">
+              <input placeholder="Amount to stake" />
+              <button>MAX</button>
+            </div>
+            <div class="error">Not AVAX enough.</div>
+            <p class="p4">CLY Staked:
+              0.0000</p>
+              <div class="submit_button">
+                <button>Stake</button>
+              </div>
+          </div>  
+          <div class="right_box2">
+            <p class="p1">Colony Staking Rewards</p>
+            <p class="p2">
+              Validator Program Rewards
+              <span class="line"></span>
+            </p>
+            <p class="p3">The Validator Program is under development. The rewards will be available early 2022.</p>
+            <p class="p2">
+              Liquidity Provider Program Rewards
+              <span class="line"></span>           
+             </p>
+            <p class="p3">The Liquidity Providing Program has already begun. The rewards will be available early 2022.</p>
+            <p  class="p2">Project Airdrops
+              <span class="line"></span>
+            </p>
+            <div class="scroll_img">
+              <div class="scroll_container">
+              <div class="img_item">
+                <img src="./img/a1.png" />
+                <div class="text">
+                  <p class="t1">TaleCraft</p>
+                  <p class="t2">Token amount:<span class="b">153,846.69</span></p>
+                  <p class="t2">Value per CLY:<span class="b">0</span></p>
+                  <div class="go">
+                    <span>Claim project</span>
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-653eao" focusable="false" viewBox="0 0 5 8" aria-hidden="true" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Warstwa_9" style="display: none;"><g style="display: inline;"><line x1="199" y1="160" x2="201" y2="160" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g><g style="display: inline;"><line x1="203" y1="164" x2="203" y2="159" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g></g><g id="Warstwa_2_00000177457704016007030780000014679297443435951035_" style="display: none;"><g style="display: inline;"><g><line x1="200.6" y1="159" x2="202.1" y2="160.4" style="fill: none; stroke: rgb(64, 170, 240); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g><g><line x1="200.6" y1="164.7" x2="204.2" y2="161.1" style="fill: none; stroke: rgb(161, 149, 238); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g></g></g><g id="Warstwa_4"><g><rect x="0.4" y="0.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.8859 1.5633)" width="2" height="2" style="fill: rgb(64, 170, 240);"></rect><rect x="0" y="4.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.8732 3.2403)" width="5" height="2" style="fill: rgb(161, 149, 238);"></rect></g></g><g id="Warstwa_3" style="display: none;"><rect x="196.4" y="156.2" width="10" height="7" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></rect><path d="M221.5,163.1l-8-0.8c-0.5-0.1-0.9-0.5-0.9-1v-4.1c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1v4.9 C222.6,162.7,222.1,163.2,221.5,163.1z" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></path></g></svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="img_item">
+                <img src="./img/a2.png" />
+                <div class="text">
+                  <p class="t1">Platypus</p>
+                  <p class="t2">Token amount:<span class="b">625,000.00</span></p>
+                  <p class="t2">Value per CLY:<span class="b">0</span></p>
+                  <div class="go">
+                    <span>Claim project</span>
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-653eao" focusable="false" viewBox="0 0 5 8" aria-hidden="true" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Warstwa_9" style="display: none;"><g style="display: inline;"><line x1="199" y1="160" x2="201" y2="160" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g><g style="display: inline;"><line x1="203" y1="164" x2="203" y2="159" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g></g><g id="Warstwa_2_00000177457704016007030780000014679297443435951035_" style="display: none;"><g style="display: inline;"><g><line x1="200.6" y1="159" x2="202.1" y2="160.4" style="fill: none; stroke: rgb(64, 170, 240); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g><g><line x1="200.6" y1="164.7" x2="204.2" y2="161.1" style="fill: none; stroke: rgb(161, 149, 238); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g></g></g><g id="Warstwa_4"><g><rect x="0.4" y="0.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.8859 1.5633)" width="2" height="2" style="fill: rgb(64, 170, 240);"></rect><rect x="0" y="4.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.8732 3.2403)" width="5" height="2" style="fill: rgb(161, 149, 238);"></rect></g></g><g id="Warstwa_3" style="display: none;"><rect x="196.4" y="156.2" width="10" height="7" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></rect><path d="M221.5,163.1l-8-0.8c-0.5-0.1-0.9-0.5-0.9-1v-4.1c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1v4.9 C222.6,162.7,222.1,163.2,221.5,163.1z" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></path></g></svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="img_item">
+                <img src="./img/a3.png" />
+                <div class="text">
+                  <p class="t1">Imperium Empires</p>
+                  <p class="t2">Token amount:<span class="b">26,136,363.63</span></p>
+                  <p class="t2">Value per CLY:<span class="b">0</span></p>
+                  <div class="go">
+                    <span>Claim project</span>
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-653eao" focusable="false" viewBox="0 0 5 8" aria-hidden="true" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Warstwa_9" style="display: none;"><g style="display: inline;"><line x1="199" y1="160" x2="201" y2="160" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g><g style="display: inline;"><line x1="203" y1="164" x2="203" y2="159" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g></g><g id="Warstwa_2_00000177457704016007030780000014679297443435951035_" style="display: none;"><g style="display: inline;"><g><line x1="200.6" y1="159" x2="202.1" y2="160.4" style="fill: none; stroke: rgb(64, 170, 240); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g><g><line x1="200.6" y1="164.7" x2="204.2" y2="161.1" style="fill: none; stroke: rgb(161, 149, 238); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g></g></g><g id="Warstwa_4"><g><rect x="0.4" y="0.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.8859 1.5633)" width="2" height="2" style="fill: rgb(64, 170, 240);"></rect><rect x="0" y="4.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.8732 3.2403)" width="5" height="2" style="fill: rgb(161, 149, 238);"></rect></g></g><g id="Warstwa_3" style="display: none;"><rect x="196.4" y="156.2" width="10" height="7" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></rect><path d="M221.5,163.1l-8-0.8c-0.5-0.1-0.9-0.5-0.9-1v-4.1c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1v4.9 C222.6,162.7,222.1,163.2,221.5,163.1z" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></path></g></svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="img_item">
+                <img src="./img/a4.png" />
+                <div class="text">
+                  <p class="t1">OH!Finance</p>
+                  <p class="t2">Token amount:<span class="b">1,154,761.9</span></p>
+                  <p class="t2">Value per CLY:<span class="b">0</span></p>
+                  <div class="go">
+                    <span>Claim project</span>
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-653eao" focusable="false" viewBox="0 0 5 8" aria-hidden="true" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Warstwa_9" style="display: none;"><g style="display: inline;"><line x1="199" y1="160" x2="201" y2="160" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g><g style="display: inline;"><line x1="203" y1="164" x2="203" y2="159" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g></g><g id="Warstwa_2_00000177457704016007030780000014679297443435951035_" style="display: none;"><g style="display: inline;"><g><line x1="200.6" y1="159" x2="202.1" y2="160.4" style="fill: none; stroke: rgb(64, 170, 240); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g><g><line x1="200.6" y1="164.7" x2="204.2" y2="161.1" style="fill: none; stroke: rgb(161, 149, 238); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g></g></g><g id="Warstwa_4"><g><rect x="0.4" y="0.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.8859 1.5633)" width="2" height="2" style="fill: rgb(64, 170, 240);"></rect><rect x="0" y="4.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.8732 3.2403)" width="5" height="2" style="fill: rgb(161, 149, 238);"></rect></g></g><g id="Warstwa_3" style="display: none;"><rect x="196.4" y="156.2" width="10" height="7" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></rect><path d="M221.5,163.1l-8-0.8c-0.5-0.1-0.9-0.5-0.9-1v-4.1c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1v4.9 C222.6,162.7,222.1,163.2,221.5,163.1z" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></path></g></svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="img_item">
+                <img src="./img/a5.png" />
+                <div class="text">
+                  <p class="t1">Heroes of NFT</p>
+                  <p class="t2">Token amount:<span class="b">600,000.00</span></p>
+                  <p class="t2">Value per CLY:<span class="b">0</span></p>
+                  <div class="go">
+                    <span>Claim project</span>
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-653eao" focusable="false" viewBox="0 0 5 8" aria-hidden="true" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Warstwa_9" style="display: none;"><g style="display: inline;"><line x1="199" y1="160" x2="201" y2="160" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g><g style="display: inline;"><line x1="203" y1="164" x2="203" y2="159" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g></g><g id="Warstwa_2_00000177457704016007030780000014679297443435951035_" style="display: none;"><g style="display: inline;"><g><line x1="200.6" y1="159" x2="202.1" y2="160.4" style="fill: none; stroke: rgb(64, 170, 240); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g><g><line x1="200.6" y1="164.7" x2="204.2" y2="161.1" style="fill: none; stroke: rgb(161, 149, 238); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g></g></g><g id="Warstwa_4"><g><rect x="0.4" y="0.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.8859 1.5633)" width="2" height="2" style="fill: rgb(64, 170, 240);"></rect><rect x="0" y="4.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.8732 3.2403)" width="5" height="2" style="fill: rgb(161, 149, 238);"></rect></g></g><g id="Warstwa_3" style="display: none;"><rect x="196.4" y="156.2" width="10" height="7" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></rect><path d="M221.5,163.1l-8-0.8c-0.5-0.1-0.9-0.5-0.9-1v-4.1c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1v4.9 C222.6,162.7,222.1,163.2,221.5,163.1z" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></path></g></svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="img_item">
+                <img src="./img/a6.png" />
+                <div class="text">
+                  <p class="t1">Islander</p>
+                  <p class="t2">Token amount:<span class="b">45,000,000.00</span></p>
+                  <p class="t2">Value per CLY:<span class="b">0</span></p>
+                  <div class="go">
+                    <span>Claim project</span>
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-653eao" focusable="false" viewBox="0 0 5 8" aria-hidden="true" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Warstwa_9" style="display: none;"><g style="display: inline;"><line x1="199" y1="160" x2="201" y2="160" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g><g style="display: inline;"><line x1="203" y1="164" x2="203" y2="159" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g></g><g id="Warstwa_2_00000177457704016007030780000014679297443435951035_" style="display: none;"><g style="display: inline;"><g><line x1="200.6" y1="159" x2="202.1" y2="160.4" style="fill: none; stroke: rgb(64, 170, 240); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g><g><line x1="200.6" y1="164.7" x2="204.2" y2="161.1" style="fill: none; stroke: rgb(161, 149, 238); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g></g></g><g id="Warstwa_4"><g><rect x="0.4" y="0.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.8859 1.5633)" width="2" height="2" style="fill: rgb(64, 170, 240);"></rect><rect x="0" y="4.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.8732 3.2403)" width="5" height="2" style="fill: rgb(161, 149, 238);"></rect></g></g><g id="Warstwa_3" style="display: none;"><rect x="196.4" y="156.2" width="10" height="7" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></rect><path d="M221.5,163.1l-8-0.8c-0.5-0.1-0.9-0.5-0.9-1v-4.1c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1v4.9 C222.6,162.7,222.1,163.2,221.5,163.1z" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></path></g></svg>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="img_item">
+                <img src="./img/a7.png" />
+                <div class="text">
+                  <p class="t1">Kyte</p>
+                  <p class="t2">Token amount:<span class="b">500,000.00</span></p>
+                  <p class="t2">Value per CLY:<span class="b">0</span></p>
+                  <div class="go">
+                    <span>Claim project</span>
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-653eao" focusable="false" viewBox="0 0 5 8" aria-hidden="true" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Warstwa_9" style="display: none;"><g style="display: inline;"><line x1="199" y1="160" x2="201" y2="160" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g><g style="display: inline;"><line x1="203" y1="164" x2="203" y2="159" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g></g><g id="Warstwa_2_00000177457704016007030780000014679297443435951035_" style="display: none;"><g style="display: inline;"><g><line x1="200.6" y1="159" x2="202.1" y2="160.4" style="fill: none; stroke: rgb(64, 170, 240); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g><g><line x1="200.6" y1="164.7" x2="204.2" y2="161.1" style="fill: none; stroke: rgb(161, 149, 238); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g></g></g><g id="Warstwa_4"><g><rect x="0.4" y="0.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.8859 1.5633)" width="2" height="2" style="fill: rgb(64, 170, 240);"></rect><rect x="0" y="4.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.8732 3.2403)" width="5" height="2" style="fill: rgb(161, 149, 238);"></rect></g></g><g id="Warstwa_3" style="display: none;"><rect x="196.4" y="156.2" width="10" height="7" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></rect><path d="M221.5,163.1l-8-0.8c-0.5-0.1-0.9-0.5-0.9-1v-4.1c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1v4.9 C222.6,162.7,222.1,163.2,221.5,163.1z" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></path></g></svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="img_item">
+                <img src="./img/a8.png" />
+                <div class="text">
+                  <p class="t1">Dogeon</p>
+                  <p class="t2">Token amount:<span class="b">6,000,000.664</span></p>
+                  <p class="t2">Value per CLY:<span class="b">0</span></p>
+                  <div class="go">
+                    <span>Claim project</span>
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-653eao" focusable="false" viewBox="0 0 5 8" aria-hidden="true" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Warstwa_9" style="display: none;"><g style="display: inline;"><line x1="199" y1="160" x2="201" y2="160" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g><g style="display: inline;"><line x1="203" y1="164" x2="203" y2="159" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g></g><g id="Warstwa_2_00000177457704016007030780000014679297443435951035_" style="display: none;"><g style="display: inline;"><g><line x1="200.6" y1="159" x2="202.1" y2="160.4" style="fill: none; stroke: rgb(64, 170, 240); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g><g><line x1="200.6" y1="164.7" x2="204.2" y2="161.1" style="fill: none; stroke: rgb(161, 149, 238); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g></g></g><g id="Warstwa_4"><g><rect x="0.4" y="0.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.8859 1.5633)" width="2" height="2" style="fill: rgb(64, 170, 240);"></rect><rect x="0" y="4.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.8732 3.2403)" width="5" height="2" style="fill: rgb(161, 149, 238);"></rect></g></g><g id="Warstwa_3" style="display: none;"><rect x="196.4" y="156.2" width="10" height="7" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></rect><path d="M221.5,163.1l-8-0.8c-0.5-0.1-0.9-0.5-0.9-1v-4.1c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1v4.9 C222.6,162.7,222.1,163.2,221.5,163.1z" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></path></g></svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="img_item">
+                <img src="./img/a9.png" />
+                <div class="text">
+                  <p class="t1">Deliq</p>
+                  <p class="t2">Token amount:<span class="b">800,000.00</span></p>
+                  <p class="t2">Value per CLY:<span class="b">0</span></p>
+                  <div class="go">
+                    <span>Claim project</span>
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-653eao" focusable="false" viewBox="0 0 5 8" aria-hidden="true" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Warstwa_9" style="display: none;"><g style="display: inline;"><line x1="199" y1="160" x2="201" y2="160" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g><g style="display: inline;"><line x1="203" y1="164" x2="203" y2="159" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g></g><g id="Warstwa_2_00000177457704016007030780000014679297443435951035_" style="display: none;"><g style="display: inline;"><g><line x1="200.6" y1="159" x2="202.1" y2="160.4" style="fill: none; stroke: rgb(64, 170, 240); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g><g><line x1="200.6" y1="164.7" x2="204.2" y2="161.1" style="fill: none; stroke: rgb(161, 149, 238); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g></g></g><g id="Warstwa_4"><g><rect x="0.4" y="0.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.8859 1.5633)" width="2" height="2" style="fill: rgb(64, 170, 240);"></rect><rect x="0" y="4.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.8732 3.2403)" width="5" height="2" style="fill: rgb(161, 149, 238);"></rect></g></g><g id="Warstwa_3" style="display: none;"><rect x="196.4" y="156.2" width="10" height="7" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></rect><path d="M221.5,163.1l-8-0.8c-0.5-0.1-0.9-0.5-0.9-1v-4.1c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1v4.9 C222.6,162.7,222.1,163.2,221.5,163.1z" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></path></g></svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="img_item">
+                <img src="./img/a10.png" />
+                <div class="text">
+                  <p class="t1">Degis</p>
+                  <p class="t2">Token amount:<span class="b">133,333.328</span></p>
+                  <p class="t2">Value per CLY:<span class="b">0</span></p>
+                  <div class="go">
+                    <span>Claim project</span>
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-653eao" focusable="false" viewBox="0 0 5 8" aria-hidden="true" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Warstwa_9" style="display: none;"><g style="display: inline;"><line x1="199" y1="160" x2="201" y2="160" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g><g style="display: inline;"><line x1="203" y1="164" x2="203" y2="159" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g></g><g id="Warstwa_2_00000177457704016007030780000014679297443435951035_" style="display: none;"><g style="display: inline;"><g><line x1="200.6" y1="159" x2="202.1" y2="160.4" style="fill: none; stroke: rgb(64, 170, 240); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g><g><line x1="200.6" y1="164.7" x2="204.2" y2="161.1" style="fill: none; stroke: rgb(161, 149, 238); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g></g></g><g id="Warstwa_4"><g><rect x="0.4" y="0.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.8859 1.5633)" width="2" height="2" style="fill: rgb(64, 170, 240);"></rect><rect x="0" y="4.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.8732 3.2403)" width="5" height="2" style="fill: rgb(161, 149, 238);"></rect></g></g><g id="Warstwa_3" style="display: none;"><rect x="196.4" y="156.2" width="10" height="7" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></rect><path d="M221.5,163.1l-8-0.8c-0.5-0.1-0.9-0.5-0.9-1v-4.1c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1v4.9 C222.6,162.7,222.1,163.2,221.5,163.1z" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></path></g></svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="img_item">
+                <img src="./img/a11.png" />
+                <div class="text">
+                  <p class="t1">Degis</p>
+                  <p class="t2">Token amount:<span class="b">133,333.328</span></p>
+                  <p class="t2">Value per CLY:<span class="b">0</span></p>
+                  <div class="go">
+                    <span>Claim project</span>
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-653eao" focusable="false" viewBox="0 0 5 8" aria-hidden="true" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Warstwa_9" style="display: none;"><g style="display: inline;"><line x1="199" y1="160" x2="201" y2="160" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g><g style="display: inline;"><line x1="203" y1="164" x2="203" y2="159" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g></g><g id="Warstwa_2_00000177457704016007030780000014679297443435951035_" style="display: none;"><g style="display: inline;"><g><line x1="200.6" y1="159" x2="202.1" y2="160.4" style="fill: none; stroke: rgb(64, 170, 240); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g><g><line x1="200.6" y1="164.7" x2="204.2" y2="161.1" style="fill: none; stroke: rgb(161, 149, 238); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g></g></g><g id="Warstwa_4"><g><rect x="0.4" y="0.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.8859 1.5633)" width="2" height="2" style="fill: rgb(64, 170, 240);"></rect><rect x="0" y="4.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.8732 3.2403)" width="5" height="2" style="fill: rgb(161, 149, 238);"></rect></g></g><g id="Warstwa_3" style="display: none;"><rect x="196.4" y="156.2" width="10" height="7" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></rect><path d="M221.5,163.1l-8-0.8c-0.5-0.1-0.9-0.5-0.9-1v-4.1c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1v4.9 C222.6,162.7,222.1,163.2,221.5,163.1z" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></path></g></svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="img_item">
+                <img src="https://app.colonylab.io/airdrops/degis.png" />
+                <div class="text">
+                  <p class="t1">Degis</p>
+                  <p class="t2">Token amount:<span class="b">133,333.328</span></p>
+                  <p class="t2">Value per CLY:<span class="b">0</span></p>
+                  <div class="go">
+                    <span>Claim project</span>
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-653eao" focusable="false" viewBox="0 0 5 8" aria-hidden="true" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Warstwa_9" style="display: none;"><g style="display: inline;"><line x1="199" y1="160" x2="201" y2="160" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g><g style="display: inline;"><line x1="203" y1="164" x2="203" y2="159" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g></g><g id="Warstwa_2_00000177457704016007030780000014679297443435951035_" style="display: none;"><g style="display: inline;"><g><line x1="200.6" y1="159" x2="202.1" y2="160.4" style="fill: none; stroke: rgb(64, 170, 240); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g><g><line x1="200.6" y1="164.7" x2="204.2" y2="161.1" style="fill: none; stroke: rgb(161, 149, 238); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g></g></g><g id="Warstwa_4"><g><rect x="0.4" y="0.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.8859 1.5633)" width="2" height="2" style="fill: rgb(64, 170, 240);"></rect><rect x="0" y="4.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.8732 3.2403)" width="5" height="2" style="fill: rgb(161, 149, 238);"></rect></g></g><g id="Warstwa_3" style="display: none;"><rect x="196.4" y="156.2" width="10" height="7" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></rect><path d="M221.5,163.1l-8-0.8c-0.5-0.1-0.9-0.5-0.9-1v-4.1c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1v4.9 C222.6,162.7,222.1,163.2,221.5,163.1z" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></path></g></svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="img_item">
+                <img src="https://app.colonylab.io/airdrops/heroes-chained.png" />
+                <div class="text">
+                  <p class="t1">Heroes Chained</p>
+                  <p class="t2">Token amount:<span class="b">128,000.00</span></p>
+                  <p class="t2">Value per CLY:<span class="b">0</span></p>
+                  <div class="go">
+                    <span>Claim project</span>
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-653eao" focusable="false" viewBox="0 0 5 8" aria-hidden="true" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Warstwa_9" style="display: none;"><g style="display: inline;"><line x1="199" y1="160" x2="201" y2="160" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g><g style="display: inline;"><line x1="203" y1="164" x2="203" y2="159" style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-miterlimit: 10;"></line></g></g><g id="Warstwa_2_00000177457704016007030780000014679297443435951035_" style="display: none;"><g style="display: inline;"><g><line x1="200.6" y1="159" x2="202.1" y2="160.4" style="fill: none; stroke: rgb(64, 170, 240); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g><g><line x1="200.6" y1="164.7" x2="204.2" y2="161.1" style="fill: none; stroke: rgb(161, 149, 238); stroke-width: 2; stroke-miterlimit: 10; stroke-linejoin: bevel;"></line></g></g></g><g id="Warstwa_4"><g><rect x="0.4" y="0.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.8859 1.5633)" width="2" height="2" style="fill: rgb(64, 170, 240);"></rect><rect x="0" y="4.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.8732 3.2403)" width="5" height="2" style="fill: rgb(161, 149, 238);"></rect></g></g><g id="Warstwa_3" style="display: none;"><rect x="196.4" y="156.2" width="10" height="7" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></rect><path d="M221.5,163.1l-8-0.8c-0.5-0.1-0.9-0.5-0.9-1v-4.1c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1v4.9 C222.6,162.7,222.1,163.2,221.5,163.1z" style="display: inline; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(145, 132, 235);"></path></g></svg>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+            </div>
+          </div>  
+
+        <div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/script.js" id="Scriptjs-js"></script>
+  <script src="./js/app.js" type="text/javascript"></script>
+</html>

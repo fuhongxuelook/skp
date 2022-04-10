@@ -1,0 +1,499 @@
+<html lang="zh-CN">
+  <head>
+    <title>ShibKing Pro</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link href="pro2.ico" type="image/x-icon" rel="icon" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script>
+      window.ga =
+        window.ga ||
+        function () {
+          (ga.q = ga.q || []).push(arguments);
+        };
+      ga.l = +new Date();
+      ga("create", "UA-105392568-1", "auto");
+      ga("send", "pageview");
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
+  </head>
+  <body>
+    <div class="start">
+      <img class="start-loading" src="./img/start.png" />
+    </div>
+    <div class="h-container">
+    <!-- <div class="container"> -->
+      <div class="skp animate__animated animate__bounce .menu3">
+        <li data-menuanchor="index">
+          <a href="#index">
+            <img class="logo1" src="./img/pro2.png" />
+            <img src="./img/logo.png" />
+          </a>
+        </li>
+      </div>
+      <ul id="menu" class="menu3 animate__animated animate__bounce">
+        <li data-menuanchor="index"><a href="#index"></a></li>
+        <li data-menuanchor="overview"><a href="#overview">Overview</a></li>
+        <li data-menuanchor="vision"><a href="#vision">Vision</a></li>
+        <li data-menuanchor="tokenomics">
+          <a href="#tokenomics">Tokenomics</a>
+        </li>
+        <li data-menuanchor="roadmap"><a href="#roadmap">Roadmap</a></li>
+        <li data-menuanchor="team"><a href="#team">Team</a></li>
+        <li data-menuanchor="contactUs"><a href="#contactUs">Contact Us</a></li>
+        <!-- <li>
+          <a href="https://medium.com/@skpsevice" target="_blank">Blog</a>
+        </li> -->
+        <li><a href="app.html" target="_blank" class="app light-btn">Launch APP</a></li>
+      </ul>
+      <ul id="menu2" class="menu3 animate__animated animate__fadeIn">
+        <li data-menuanchor="index"><a href="#index"></a></li>
+        <li data-menuanchor="overview"><a href="#overview"></a></li>
+        <li data-menuanchor="vision"><a href="#vision"></a></li>
+        <li data-menuanchor="tokenomics"><a href="#tokenomics"></a></li>
+        <li data-menuanchor="roadmap"><a href="#roadmap"></a></li>
+        <li data-menuanchor="team"><a href="#team"></a></li>
+        <li data-menuanchor="contactUs"><a href="#contactUs"></a></li>
+      </ul>
+      <div id="dowebok">
+        <!-- 第一屏 -->
+        <div class="section">
+          <div class="hover-div" onmousemove="color_hover(event)"></div>
+          <canvas class="banner_canvas" id="canvas_banner"></canvas>
+          <div class="box box1">
+            <img class="bg-loading" src="./img/loading.png" />
+            <img class="bg-skp" src="./img/skp.png" />
+            <p class="p1 nodely animate__animated animate__backInUp">
+              COMMUNITY-DRIVEN DAO ECOSYSTEM
+            </p>
+            <p class="p2 dely_1 animate__animated animate__backInUp">
+              POWERED BY SHIBKING PRO'S SKP TOKEN
+            </p>
+          </div>
+          <div class="box1-btn-token dely_2 animate__animated animate__fadeIn">
+            <a class="box1-token light-btn">TOKEN ADDRESS</a>
+          </div>
+        </div>
+        <!-- 第二屏 -->
+        <div class="section">
+          <div class="box box2">
+            <p class="p1 nodely animate__animated animate__backInUp">
+              Overview
+            </p>
+            <p class="p2 dely_1 animate__animated animate__backInUp">
+              The Past and Present of ShibKing Pro
+            </p>
+            <div class="localImg">
+              <div>
+                <img
+                  class="local local1 box2-local-init animate__animated animate__fadeIn"
+                  src="./img/local.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="local local2 animate__animated animate__fadeIn"
+                  src="./img/local.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="local local3 animate__animated animate__fadeIn"
+                  src="./img/local.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="local local4 animate__animated animate__fadeIn"
+                  src="./img/local.png"
+                />
+              </div>
+            </div>
+            <div class="past">
+              <div
+                data="1"
+                class="item box2-active box2-animate1 animate__animated animate__backInUp"
+              >
+                <div class="text-line">
+                  <div class="text">PAST</div>
+                  <div class="line"></div>
+                </div>
+                <div class="origin-text">
+                  <p>Origin</p>
+                  <img class="m1" src="./img/p1.gif" />
+                  <div class="text text1 animate__animated animate__fadeIn">
+                    Shibking was built by the original project team after months
+                    of research and development and went online on December 16,
+                    2021. Because the project team mistakenly send nearly half
+                    of the tokens into the deadAddress. And there are many bugs
+                    at the code of contract. Charge 1% for each trade have not
+                    into the marketing wallet of the project team but into the
+                    deadAddress. As a result, they received huge losses and
+                    finally sold out all the token and left that night.
+                  </div>
+                </div>
+              </div>
+              <div
+                data="2"
+                class="item item2 box2-animate2 animate__animated animate__backInUp"
+              >
+                <div class="text-line">
+                  <div class="text">AMAZING</div>
+                  <div class="line"></div>
+                </div>
+                <div class="origin-text">
+                  <p>The community established</p>
+                  <img class="m1" src="./img/p2.gif" />
+                  <div class="text text2 animate__animated animate__fadeIn">
+                    Investors unite together and created Pinecone Community.
+                    With Shibking's perfect mechanism, no project team, out of
+                    print currency and other advantages, They want to build the
+                    1st 100% DAO Community in the world.
+                  </div>
+                </div>
+              </div>
+              <div
+                data="3"
+                class="item item3 box2-animate3 animate__animated animate__backInUp"
+              >
+                <div class="text-line">
+                  <div class="text">CRISIS</div>
+                  <div class="line"></div>
+                </div>
+                <div class="origin-text">
+                  <p>Uncertainly risks</p>
+                  <img class="m1" src="./img/p3.gif" />
+                  <div class="text text3 animate__animated animate__fadeIn">
+                    Much authority, the dividend was opaque, and the sliding
+                    point could be adjusted at will causing heavy losses to the
+                    members of Pinecone Community.
+                  </div>
+                </div>
+              </div>
+              <div
+                data="4"
+                class="item item4 box2-animate4 animate__animated animate__backInUp"
+              >
+                <div class="text-line">
+                  <div class="text">The KING BACK</div>
+                </div>
+                <div class="origin-text">
+                  <p>Function description</p>
+                  <img class="m1" src="./img/p4.gif" />
+                  <div class="text text4 animate__animated animate__fadeIn">
+                    The overseas technical team was impressed by the sincerity
+                    of the Pinecone Community. They swept away many obstacles,
+                    determined to cooperate and win-win, launched SKP and want
+                    to build the 1st 100% Dao Community in the world.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 第三屏 -->
+        <div class="section">
+          <div class="box box3">
+            <div class="l nodely animate__animated animate__fadeInLeft">
+              <img class="box3-image" src="./img/vision.gif" />
+            </div>
+            <div class="r">
+              <div class="t1 nodely animate__animated animate__fadeIn">
+                VISION
+              </div>
+              <div class="t2 dely_1 animate__animated animate__fadeIn">
+                The vision of SKP(Pinecone Community)
+              </div>
+              <div class="t3 dely_2 animate__animated animate__fadeIn">
+                Our vision is to build the 1st 100% DAO Community in the world
+              </div>
+              <div class="t3 dely_3 animate__animated animate__fadeIn">
+                The major agenda of the community will be voted by all members.
+              </div>
+              <div class="t4 dely_4 animate__animated animate__fadeIn">
+                <ul class="text-ul">
+                  <li>Treasury will repurchase SKP regularly.</li>
+                  <li>Members will received SKP as rewards for voting.</li>
+                  <li>We will have our own GameFi and NFTs in the future.</li>
+                </ul>
+<!-- 
+                <p>· Treasury will repurchase SKP regularly.</p>
+                <p>· Members will received SKP as rewards for voting.</p>
+                <p>· We will have our own GameFi and NFTs in the future.</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 第四屏 -->
+        <div class="section">
+          <div class="box box4">
+            <div class="l animate__animated animate__fadeInDown">
+              <div class="t1">TOKENOMICS</div>
+              <div class="t2">
+                SKP infuses traditional venture capital with community spirit
+                through open governance, support and inclusion backed by a
+                pioneering financial mechanism. SKP ecosystem will implement the
+                DAO structure over time to achieve decentralization.
+              </div>
+              <div class="t3">
+                <div class="t3-l animate__animated animate__fadeInBottomLeft">
+                  <div>
+                    <span class="pink">1000</span>
+                    <span class="pink">trillion</span>
+                    <span>Total supply</span>
+                  </div>
+                  <div>
+                    <span class="pink">60%</span>
+                    <span>Into DeadAddress</span>
+                  </div>
+                  <div>
+                    <span class="pink">1</span>
+                    <span class="pink">billion</span>
+                    <span>The deflation limit</span>
+                  </div>
+                  <div>
+                    <span class="pink">262</span>
+                    <span class="pink">trillion</span>
+                    <span>Initail circulation</span>
+                  </div>
+                </div>
+                <div class="t3-r animate__animated animate__fadeInBottomRight">
+                  <div class="t3-r-1">Mapping for the Shibking holders</div>
+                  <div class="t3-r-2">
+                    <span>1%</span>
+                    <span>Destroy</span>
+                  </div>
+                  <div class="t3-r-2">
+                    <span>1%</span>
+                    <span>Liquidity</span>
+                  </div>
+                  <div class="t3-r-3">
+                    <span>1%</span>
+                    <span>Treasury</span>
+                  </div>
+                  <div class="t3-r-4">
+                    <span>9%</span>
+                    <span>Reward(Shib and USDT)</span>
+                  </div>
+                  <div class="t3-r-5">
+                    <span>12%</span>
+                    <span>Slippage</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="r animate__animated animate__fadeInRight">
+              <img class="box4-img" src="./img/p6.gif" />
+            </div>
+          </div>
+        </div>
+        <!-- 第五屏 -->
+        <div class="section">
+          <div class="box box2 box5">
+            <p class="p1 animate__animated animate__zoomIn">ROADMAP</p>
+            <div class="localImg animate__animated animate__zoomIn">
+              <div>
+                <img
+                  class="local box5-local-init local1 animate__animated animate__fadeIn"
+                  src="./img/local.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="local local2 animate__animated animate__fadeIn"
+                  src="./img/local.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="local local3 animate__animated animate__fadeIn"
+                  src="./img/local.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="local local4 animate__animated animate__fadeIn"
+                  src="./img/local.png"
+                />
+              </div>
+            </div>
+            <!-- <div class="year">
+              <div class="box5-animate1 animate__animated animate__fadeIn">
+                2022
+              </div>
+              <div class="box5-animate2 animate__animated animate__fadeIn">
+                2022
+              </div>
+              <div class="box5-animate3 animate__animated animate__fadeIn">
+                2022
+              </div>
+              <div class="box5-animate4 animate__animated animate__fadeIn">
+                2022
+              </div>
+            </div> -->
+            <div class="past5">
+              <div
+                class="item box5-animate1 animate__animated animate__fadeInUp"
+              >
+                <div class="text">2022 Q1</div>
+                <div class="line"></div>
+              </div>
+              <div
+                class="item box5-animate2 animate__animated animate__fadeInUp"
+              >
+                <div class="text">2022 Q2</div>
+                <div class="line"></div>
+              </div>
+              <div
+                class="item box5-animate3 animate__animated animate__fadeInUp"
+              >
+                <div class="text">2022 Q3</div>
+                <div class="line"></div>
+              </div>
+              <div
+                class="item box5-animate4 animate__animated animate__fadeInUp"
+              >
+                <div class="text">2022 Q4</div>
+              </div>
+            </div>
+            <div class="origin">
+              <div
+                data="1"
+                class="originItem box5-active box5-animate1 animate__animated animate__fadeInUp"
+              >
+              <ul class="text-ul">
+                <li>SKP is online.</li>
+                <li>code audit.</li>
+                <li>Official website online (partial functions) open.</li>
+                <li>The Ministry of Finance's regular repurchase SKP function is open.</li>
+              </ul>
+              </div>
+              <div
+                data="2"
+                class="originItem origin2 box5-animate2 animate__animated animate__fadeInUp"
+              >
+              <ul class="text-ul">
+                <li>Official website opens pledge pool.</li>
+                <li>Community voting function completed.</li>
+                <li>Official website opens USDT exchange for SKP to stabilize the market.</li>
+              </ul>
+              </div>
+              <div
+                data="3"
+                class="originItem origin3 box5-animate3 animate__animated animate__fadeInUp"
+              >
+              <ul class="text-ul">
+                <li>Chain Tour officially established the project.</li>
+                <li>Chain Games Association was established.</li>
+                <li>Chain Game NFT Public Sale.</li>
+                <li>Chain Games officially launched.</li>
+              </ul>
+              </div>
+              <div
+                data="4"
+                class="originItem origin4 box5-animate4 animate__animated animate__fadeInUp"
+              >
+              <ul class="text-ul">
+                <li>Turn on liquidity mining.</li>
+                <li>The official website launched the IDO function.</li>
+                <li>Songuo Community DAPP Internal Test.</li>
+                <li>Songuo Community Anniversary Giveback Program.</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 第六屏 -->
+        <div class="section">
+          <div class="box box6">
+            <video class="playVideo animate__animated animate__fadeIn" width="320" height="240" controls>
+              <source src="./video.mp4" type="video/mp4">
+            </video>
+            <div class="expert">
+              <div
+              class="title box3-animate1 animate__animated animate__fadeInUp"
+            >
+              TEAM
+            </div>
+              <div
+                class="item box3-animate3 animate__animated animate__fadeInUp"
+              >
+                <img src="./img/z1.png" />
+                <div>Jean Wagner</div>
+              </div>
+              <div
+                class="item box3-animate4 animate__animated animate__fadeInUp"
+              >
+                <img src="./img/z2.png" />
+                <div>Alexandre Blasi</div>
+              </div>
+              <div
+                class="item box3-animate5 animate__animated animate__fadeInUp"
+              >
+                <img src="./img/z3.png" />
+                <div>Ronda Bulow</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 第七屏 -->
+        <div class="section">
+          <div class="box box7">
+            <div class="title box3-animate1 animate__animated animate__fadeIn">
+              Contact Us
+            </div>
+            <!-- <div class="tip box3-animate3 animate__animated animate__fadeIn">
+              Gmail:skpsevice@gmail.com
+            </div> -->
+            <div
+              class="box7-logo box3-animate4 animate__animated animate__fadeIn"
+            >
+              <a href="https://twitter.com/ShibkingPro" target="_blank"><img data="1" src="./img/t1.png" /></a>
+              <a href="https://t.me/ShibKingPro" target="_blank"><img data="2" src="./img/t2.png" /></a>
+              <a href="https://discord.gg/shibkingpro" target="_blank"><img data="3" src="./img/t3.png" /></a>
+            </div>
+            <div
+              class="box7-item box3-animate5 animate__animated animate__fadeIn"
+            >
+              <div class="item itemf">
+                <img src="./img/b1.png" />
+                <div>松果社区<br><span>Pincone Community</span></div>
+              </div>
+              <a class="itemc" href="https://www.mexc.am/register" target="_blank">
+                <div class="item">
+                  <img src="./img/b2.png" />
+                  <div>MEXC</div>
+                </div>
+              </a>
+              <a class="itemc l0" href="https://www.gate.tv/cn/" target="_blank">
+                <div class="item">
+                  <img src="./img/b3.png" />
+                  <div>Gate.io</div>
+                </div>
+              </a>
+              <div class="item itemf copyEmail">
+                <img src="./img/b4.png" />
+                <div>skpsevice@gmail.com</div>
+              </div>
+              <input id="copyInput" />
+            </div>
+          </div>
+          <div
+            class="box7-footer box3-animate6 animate__animated animate__fadeIn"
+          >
+            <img src="./img/t4.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/script.js" id="Scriptjs-js"></script>
+  <script src="./js/index.js" type="text/javascript"></script>
+</html>
